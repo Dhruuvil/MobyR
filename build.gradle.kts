@@ -1,6 +1,15 @@
-plugins {
-    id("com.android.library") version "9.4.0"
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:9.4.0")
+    }
 }
+
+apply(plugin = "com.android.library")
 
 android {
     namespace = "com.mobyrewards.mobyrewards"
